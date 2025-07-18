@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -175,11 +175,14 @@ xcopy /Y /D "$(ProjectDir)runtime\$(Configuration)\*.dll" "$(OutDir)"
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BanDan.cpp" />
     <ClCompile Include="L.O.S.T.cpp" />
     <ClCompile Include="Movement\Movement.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BanDan.hpp" />
     <ClInclude Include="Movement\Movement.hpp" />
+    <ClInclude Include="hoatanhslash.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
